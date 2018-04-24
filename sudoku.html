@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku Solver</title>
+	<link rel="stylesheet" type="text/css" href="sudoku.css">
+</head>
+<body>
+
+	<h1>Sudoku Solver</h1>
+	<p>(Currently solves up to hard difficulty)</p>
+
+	<table>
+		<tbody>		
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>				
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>					
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>					
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>					
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>				
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>					
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>					
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>					
+			<tr>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+				<td><input class="square-input" maxlength="1" value=""></td>
+			</tr>			
+		</tbody>	
+	</table>
+
+	<button onclick="tableSolve()">Solve!</button>
+	<br>
+	<input type="text" id="puzzle-input" value="090000008043060907000009050408005006000601000600200503010900000209030460800000030">
+	<button id="input-btn" onclick="loadFromStr()">Load Game From String</button>
+
+	<script type="text/javascript" src="sudoku.js"></script>
+</body>
+</html>
