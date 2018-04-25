@@ -18,6 +18,14 @@ h1 {
 	width: 470px;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
+.hackerman {
+	background-image: url("hackerman.png");
+}
+
 ul {
 	margin: 7px;
 	padding: 0;
@@ -25,15 +33,15 @@ ul {
 }
 
 li {
+	box-sizing: border-box;
 	height: 40px;
 	line-height: 40px;
-	box-sizing: border-box;
 	margin-bottom: 5px;
 }
 
 a:link, a:visited {
-    color: black;
     border: 3px solid black;
+    color: black;
     text-align: center; 
     text-decoration: none;
     padding: 5px 10px;
@@ -42,4 +50,8 @@ a:link, a:visited {
 a:hover, a:active {
     background-color: black;
     color: white;
+}
+
+.hidden {
+	display: none;
 }
