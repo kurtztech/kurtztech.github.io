@@ -38,6 +38,7 @@ function handleAuthResult(authResult) {
    $('#authorize-button').removeClass("hidden");
    $('#authorize-button').on('click', function(){
      handleAuthClick();
+     console.log("pressed");
    });
  }
 }
