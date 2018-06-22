@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/font-awesome.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Incremental Coins Mark 2</title>
+</head>
+
+<body>
+
+  <div id="game" class="game container-fluid text-center">
+    <div id="settings-bg" class="settings-bg justify-content-center align-items-center">
+      <div id="settings-inner" class="settings-inner">
+        <h3 class="text-left">Play Time:&nbsp;
+          <span id="play-time" class="play-time"></span>
+        </h3>
+        <h3 class="text-left">Last Upgrade:&nbsp;
+          <span id="time-since-upgrade" class="time-since-upgrade"></span>
+        </h3>
+      </div>
+    </div>
+    <div class="row row-1 align-items-center">
+      <div class="col-3">
+
+      </div>
+      <div class="col-6">
+        <h1>Incremental Coins
+          <span class="mark-two">Mark 2</span>
+        </h1>
+        <h2>
+          <i>
+            More Incremental, More Coins
+          </i>
+        </h2>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row row-2 align-items-center">
+      <div class="col align-items-center d-flex justify-content-center">
+        <div class="balance-inner">
+          <h3>Bank Balance
+          </h3>
+          <h1 id="dollars">$0</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row row-3 align-items-center">
+      <div class="col-1 align-self-end">
+        <i id="toggle-stats" class="fas fa-chart-bar toggle-stats"></i>
+      </div>
+      <div class="col-10">
+        <div class="row production-inner">
+          <div class="col">
+            <button id="level-up-warehouse" class="btn shadow-none btn-secondary level-up-warehouse" data-toggle="tooltip" data-placement="right"
+              data-title="100X Shipping Capacity $25,000">
+              <i class="fas fa-angle-double-up"></i>
+            </button>
+            <i class="fas fa-truck-moving wt"></i>
+            <i class="fas fa-truck-moving wt"></i>
+            <i class="fas fa-truck-moving wt"></i>
+            <div class="warehouse-info">
+              <h5>Warehouse</h5>
+            </div>
+            <span class="fa-layers warehouse fa-fw">
+              <i class="fas fa-warehouse"></i>
+              <i class="fas fa-cubes fa-inverse" data-fa-transform="shrink-11.5 up-4.25"></i>
+            </span>
+            <div class="shipment-info">
+              <h5>Shipping Capacity
+              </h5>
+              <h4>
+                <span id="shipment">1,000</span> metal/sec</h4>
+              <br>
+            </div>
+          </div>
+          <div class="col">
+            <button id="level-up-mint" class="btn shadow-none btn-secondary level-up-mint" data-toggle="tooltip" data-placement="right"
+              data-title="2X Minting Rate $10.00">
+              <i class="fas fa-angle-double-up"></i>
+            </button>
+            <i class="fas fa-truck ft"></i>
+            <i class="fas fa-truck ft"></i>
+            <i class="fas fa-truck ft"></i>
+            <h5 class="mint-header">Coin Mint</h5>
+            <span class="fa-layers factory fa-fw">
+              <i class="fas fa-industry"></i>
+              <i class="fas fa-coins fa-inverse" data-fa-transform="shrink-12 down-3.5"></i>
+            </span>
+            <h5>Minting Rate
+              <span id="mint-warning" class="mint-warning">
+                <i class="fas fa-exclamation-triangle" data-toggle="tooltip" data-placement="top" title="Minting Rate is capped by Shipping Capacity, upgrade Shipping Capacity"></i>
+              </span>
+            </h5>
+            <h4>
+              <span id="minting-rate">0</span> coins/sec
+            </h4>
+          </div>
+          <div class="col">
+            <button id="level-up-bank" class="btn shadow-none btn-secondary level-up-bank" data-toggle="tooltip" data-placement="right"
+              data-title="2X Coin Value $1,000">
+              <i class="fas fa-angle-double-up"></i>
+            </button>
+            <div class="bank-info">
+              <h5>Bank</h5>
+            </div>
+            <span id="bank" class="fa-layers bank fa-fw">
+              <i class="fas fa-university"></i>
+              <i class="fas fa-hand-holding-usd fa-inverse" data-fa-transform="shrink-13 up-4.75"></i>
+            </span>
+            <div class="dollar-counter">
+              <h5>Income</h5>
+              <h4>
+                <span id="collection-rate">$0</span>/sec</h4>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+
+  <script src="js/bignumber.min.js "></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/main.js "></script>
+  <script src="js/events.js"></script>
+</body>
+
+</html>
