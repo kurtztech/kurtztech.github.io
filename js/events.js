@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip({
-    trigger: 'hover focus click'
+    trigger: 'hover'
   });
 
   $('#level-up-warehouse').on('click', () => {
