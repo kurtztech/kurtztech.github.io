@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.title {
+  font-size: 72px;
+  margin-top: 0;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.title-fr {
+  font-size: 72px;
+  margin-top: 0;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.title-vs {
+  font-size: 72px;
+  margin-top: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.title-cr {
+  font-size: 72px;
+  margin-top: 0;
+  font-family: 'Chela One', cursive;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flag {
+  height: 480px;
+  width: 639px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.red,
+.white,
+.blue {
+  height: 480px;
+  width: 213px;
+  position: absolute;
+}
+
+.red {
+  background-color: #f31830;
+  left: 426px;
+}
+
+.white {
+  background-color: #fff;
+  left: 213px;
+}
+
+.blue {
+  background-color: #00267f;
+}
+
+.croat {
+  z-index: 1;
+  height: 300px;
+  position: relative;
+  align-self: center;
+  margin: auto;
+  top: -400px;
+}
+
+.croat > img {
+  height: 100%;
+}
