@@ -15,10 +15,10 @@ function flagTransform() {
 
   tl.fromTo(
     '.croat',
-    2,
+    1.5,
     { y: '0', x: '0' },
     { y: '375', ease: Back.easeOut.config(1) },
-    1
+    1.5
   );
 
   tl.to('.blue', 1, { width: '639', x: '0' }, 2);
@@ -31,7 +31,7 @@ function flagTransform() {
   tl.to('.red', 1, { width: '213', x: '0' }, 4);
   tl.to('.title', 0.5, { text: { value: 'Vs.', newClass: 'title-vs' } }, 4);
 
-  tl.to('.croat', 0.75, { ease: Back.easeIn.config(3), x: '450' }, 4);
+  tl.to('.croat', 0.75, { ease: Back.easeIn.config(2), x: '450' }, 4.25);
 
   tl.to('.blue', 1, { height: '480', y: '0', backgroundColor: '#00267f' }, 5);
   tl.to('.white', 1, { height: '480', y: '0' }, 5);
