@@ -15,7 +15,7 @@ function flagTransform() {
 
   tl.fromTo(
     '.croat',
-    1.5,
+    1,
     { y: '0', x: '0' },
     { y: '375', ease: Back.easeOut.config(1) },
     1.5
