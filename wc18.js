@@ -36,4 +36,4 @@ flagTransform();
 
 setInterval(function() {
   flagTransform();
-}, 4250);
+}, 4500);
