@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kemet</title>
+<meta name="description" content="An incremental game of the Nile. Start with one field and end with the Great Pyramid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Federo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="opening">
+  <header class="scene-wrap">
+    <div id="scene" aria-hidden="true"></div>
+    <div class="scene-title"><h1>Kemet</h1><p id="dynasty-line"></p></div>
+    <button id="menu-btn" class="ghost" type="button">Save and settings</button>
+  </header>
+  <div id="seasons" class="seasons" hidden></div>
+
+  <main class="layout">
+    <section class="col-left" aria-label="Your stores">
+      <p id="intro" class="intro">You have one small plot of black earth beside the river. The grain is ripe.</p>
+      <div class="reap-wrap">
+        <button id="reap" class="reap" type="button">Reap grain</button>
+      </div>
+      <div id="stores"></div>
+    </section>
+
+    <section class="col-mid" id="mid" hidden>
+      <div id="event"></div>
+      <div id="tabs" class="tabs" role="tablist" aria-label="Sections"></div>
+      <div id="panel" class="panel" role="tabpanel"></div>
+    </section>
+
+    <section class="col-right" id="right" hidden aria-label="Chronicle">
+      <h2>Chronicle</h2>
+      <ol id="log" class="log" aria-live="polite"></ol>
+    </section>
+  </main>
+
+  <dialog id="menu">
+    <h2>Save and settings</h2>
+    <p>The game saves itself in this browser every few seconds. Copy your save code to move it to another device.</p>
+    <label for="save-code">Save code</label>
+    <textarea id="save-code" rows="4" spellcheck="false"></textarea>
+    <p id="menu-msg" class="menu-msg" role="status"></p>
+    <div class="menu-row">
+      <button type="button" data-menu="export">Show my save code</button>
+      <button type="button" data-menu="import">Load this save code</button>
+    </div>
+    <div class="menu-row">
+      <button type="button" data-menu="reset" class="danger">Erase my game</button>
+      <button type="button" data-menu="close">Close</button>
+    </div>
+  </dialog>
+
+  <dialog id="weigh" class="ritual"></dialog>
+
+  <script src="logic.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
